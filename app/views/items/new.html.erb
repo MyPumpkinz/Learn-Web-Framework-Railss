@@ -1,0 +1,16 @@
+<div class="container">   
+  
+  <%= form_for @item do |f| %>   
+       
+     <h3>Create an Item</h3>   
+    
+     <div>    
+        <%= f.text_field :name, placeholder: "name"%> <%= f.text_field :price , placeholder: "price"%> <%= f.submit 'Add Item' %>  
+     </div>
+          
+     <div>   
+        <%= link_to 'Back', { controller: 'items', action: 'index'} %>   
+    </div>  
+          
+  <% end %>
+</div> 

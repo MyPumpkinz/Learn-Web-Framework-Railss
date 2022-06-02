@@ -1,0 +1,18 @@
+<div class="container">        
+    <h3>Item Detail</h3>   
+   
+        <div>   
+          <label>Item name :</label>   
+          <%= @item.name %>   
+        </div>   
+
+        <div>   
+          <label>Item price :</label>   
+          <%= @item.price %>   
+        </div>    
+     
+  <div>   
+    <%= link_to 'Back', { controller: 'items', action: 'index'} %>   
+  </div>   
+  
+</div> 

@@ -1,0 +1,16 @@
+<div class="container">   
+  
+  <%= form_for @item do |f| %>   
+       
+     <h3>Edit <%= @item.name %></h3>   
+    
+     <div>    
+        <%= f.text_field :name, placeholder: :name %> <%= f.text_field :price, placeholder: :price %> <%= f.submit 'Update item' %>  
+     </div>
+          
+     <div>   
+        <%= link_to 'Back', { controller: 'items', action: 'index'} %>   
+    </div>  
+          
+  <% end %>
+</div>
